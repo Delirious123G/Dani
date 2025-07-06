@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Dani Girl!!</title>
+    <style>
+        body{
+            overflow: hidden;
+            background-image: url(background.jpg);
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: center center;
+        }
+        #album{
+            margin: 5% auto;
+            width: 650px;
+            height: 550px;
+
+        }
+        #album .turn-page{
+            -webkit-background-size: 100% 100%;
+            background-size:100% 100%;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="album">
+        <div style="background-image: url(Front.png);"></div>
+        <div style="background-image: url(1.png);"></div>
+        <div style="background-image: url(2.png);"></div>
+        <div style="background-image: url(3.png);"></div>
+        <div style="background-image: url(4.png);"></div>
+        <div style="background-image: url(5.png);"></div>
+        <div style="background-image: url(Back.png);"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="turn.js"></script>
+    <script>
+        $('#album').turn({gradients: true, acceleration: true});
+    </script>
+</body>
+</html>
